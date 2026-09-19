@@ -16,3 +16,18 @@ Vercel Workflows checkpointed steps; agents park while waiting (tool/HITL/next m
 
 ## Connect
 Vercel Connect auth for external services (GitHub, etc.) via `connect("github")` / `defineMcpClientConnection`. Tools call without managing tokens.
+
+## Régime (RGAA/EAA/bi-régime)
+Résultat du questionnaire cadrage légal (secteur parmi 6 B2C, taille salariés, CA, nature publique/privée/délégataire) déterminant si RGAA seul, EAA seul, ou bi-régime (→ déclaration RGAA plus protectrice). Bloque tout `analyze` tant que non déterminé.
+
+## Schéma pluriannuel (3 ans)
+Engagement orga publié en premier, avant tout audit détaillé : gouvernance, moyens, périmètre. Vérifié/créé avec le client avant `analyze`.
+
+## Plan annuel
+Déclinaison annuelle du schéma : liste sites/services à auditer cette année avec échéances programmées (même fin d'année y figure), programme les audits.
+
+## Référent accessibilité
+Interlocuteur client obligatoire (public) qui seul valide schéma, dérogation, publication déclaration — engagement juridique.
+
+## Dossier client
+Traverse `Cadrage → Schéma actif → Plan → Échantillon → Audit → Remédiation → Revue → Livrables brouillon → En attente validation → Déclaration publiée → Suivi → nouveau Plan`. Schéma/Plan partagés orga, sous-états par site.
