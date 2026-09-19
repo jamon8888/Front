@@ -31,3 +31,6 @@ Interlocuteur client obligatoire (public) qui seul valide schéma, dérogation, 
 
 ## Dossier client
 Traverse `Cadrage → Schéma actif → Plan → Échantillon → Audit → Remédiation → Revue → Livrables brouillon → En attente validation → Déclaration publiée → Suivi → nouveau Plan`. Schéma/Plan partagés orga, sous-états par site.
+
+## Échantillon (RGAA)
+7 pages obligatoires + gabarits internes → ~15 pages (Holo-RGAA `analyze` par URL, jamais `audit_url` global). Validé par le référent (risque paiement/réclamation).
