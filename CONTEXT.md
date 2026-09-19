@@ -40,3 +40,6 @@ Lot `Fail` → patch `remediate` Holo-RGAA (`rgaa-remediation`) approuvé indivi
 
 ## NeedsReview / Dérogation
 `NeedsReview` = verdicts réels session (jamais précalculé), 7.5 toujours `Manuel`. Dérogation charge disproportionnée jamais automatique — proposée/motivée par auditeur, validée explicitement par le référent (HITL).
+
+## Livrables légaux (RGAA)
+Grille .xlsx + rapport .docx (`livrables-officiels`/Holo-RGAA), déclaration brouillon générée par agent mais jamais publiée sans validation explicite du référent (HITL).
