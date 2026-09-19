@@ -14,3 +14,7 @@ Map: #14
 ## Impact
 
 Mappage direct vers Workflows EVE phases D-F ; traçabilité `qui + horodaté` par patch approuvé pour preuve DGCCRF/ARCOM.
+
+## Correction 2026-09-19
+
+**Moteur = Holo-RGAA** (`/home/jamin/Documents/Holo-RGAA`) — workspace Rust `rgaa-rs` (rgaa-core, rgaa-rules, rgaa-holo, rgaa-agent, rgaa-obscura, etc.), 73 déterministes + 32 Holo3 vision + 1 manuel 7.5. `rgaa-audit-express` dans la spec = ancien nom/logique, implémentation = Holo-RGAA. Spec technique pointera vers ce chemin comme source.
