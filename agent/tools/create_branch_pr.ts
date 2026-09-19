@@ -1,8 +1,9 @@
 import { defineTool } from "eve/tools";
+import { always } from "eve/tools/approval";
 import { z } from "zod";
 
 // Minimal workspace tool proving tools/* → agent/tools/* migration
-// In sandbox, this would run: git clone, edit file, commit, push (HITL-gated), gh pr create via Connect
+// HITL gate via approval: always() — parks before execute, resumes on human approve
 export default defineTool({
   description: "Create a branch, edit a file in sandbox, and open a PR (HITL-gated push)",
   inputSchema: z.object({
@@ -11,14 +12,16 @@ export default defineTool({
     content: z.string().describe("File content to write"),
     repo: z.string().default("jamon8888/Front"),
   }),
-  async execute(input) {
-    // Stub execution — real impl runs in sandbox bash:
-    // `git clone https://github.com/${input.repo} /tmp/repo && ...`
-    // HITL gate would park here awaiting human approval for `git push` + `gh pr create`
+  approval: always(),
+  async execute(input, ctx) {
+    // Real impl would use sandbox handle:
+    // const sandbox = await ctx.getSandbox();
+    // await sandbox.run({ command: `git clone https://github.com/${input.repo} /tmp/repo` });
+    // ... write file, commit, push (gated), gh pr create
     return {
       plannedBranch: `agent/${input.task.toLowerCase().replace(/\s+/g, "-")}`,
       plannedFile: input.filePath,
-      status: "stub — in sandbox this would clone, edit, commit, and await HITL for push/PR",
+      status: "stub — HITL approved, in sandbox this would clone/edit/commit/push/PR",
       input,
     };
   },
