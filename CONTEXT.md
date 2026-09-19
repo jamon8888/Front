@@ -34,3 +34,9 @@ Traverse `Cadrage → Schéma actif → Plan → Échantillon → Audit → Rem�
 
 ## Échantillon (RGAA)
 7 pages obligatoires + gabarits internes → ~15 pages (Holo-RGAA `analyze` par URL, jamais `audit_url` global). Validé par le référent (risque paiement/réclamation).
+
+## Remédiation (RGAA)
+Lot `Fail` → patch `remediate` Holo-RGAA (`rgaa-remediation`) approuvé individuellement, tracé `qui + horodaté` (Workflow `approval: always()`).
+
+## NeedsReview / Dérogation
+`NeedsReview` = verdicts réels session (jamais précalculé), 7.5 toujours `Manuel`. Dérogation charge disproportionnée jamais automatique — proposée/motivée par auditeur, validée explicitement par le référent (HITL).
